@@ -1,0 +1,109 @@
+// position one is given to title then grouped by five is items 
+//item num(int)(no space or any other characters)
+//time(min)
+//skill(num and description)
+//activity(game or drill)
+//materials(list or "/" for null)
+//#################################################################
+PS1
+1
+3min
+1 – Enter and exit shallow water (assisted)
+demonstrate using steps, ramps, pool edge to enter water play a game to get children comfortable and into the water
+/
+2
+6min
+2 – Jump into chest-deep water (assisted)
+demonstrate and practice jumping into chest-deep water
+/
+3
+5min
+3 – Face in water
+play “Simon says” focus on eyes, ears, chin, cheeks, nose, progressing to whole face underwater/treasure hunt
+sinking toys
+4
+4min
+4 – Blow bubbles in water
+demonstrate and practice blowing bubbles using various pool toys
+Floating toys
+5
+7min
+5 – Float on front and back(3 sec. each) assisted
+demonstrate and practice how to put on a PFD properly and assist as needed demonstrate and practice front float with PFD encourage children to blow bubbles
+PFDs
+6
+4min
+6 – Safe movement in shallow water wearing PFDs
+demonstrate and practice movement of arms and face in water play a game that reinforces movement
+/
+7
+6min
+7 – Glide on front and back(3 m each) assisted
+demonstrate and practice front and back glides with assistance encourage face in on front and ears in on back
+/
+8
+6min
+8 – Within Arms’ Reach
+reinforce Within Arms’ Reach message by only jumping when instructor is within arms’ reach
+/
+PS2
+//
+//
+//
+//
+//
+PS3
+//
+//
+//
+//
+//
+PS4
+//
+//
+//
+//
+//
+PS5
+//
+//
+//
+//
+//
+SW1
+//
+//
+//
+//
+//
+SW2
+//
+//
+//
+//
+//
+SW3
+//
+//
+//
+//
+//
+SW4
+//
+//
+//
+//
+//
+SW5
+//
+//
+//
+//
+//
+SW6
+//
+//
+//
+//
+//
+

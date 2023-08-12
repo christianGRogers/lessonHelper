@@ -46,21 +46,64 @@ public:
         return cleanLines;
     }   
 };
+vector<string> getLevelNames(){
+    parseFile newFile = parseFile("levelNames");
+    return newFile.getCleanLines();
+}
 class splitSkills{
 private:
     parseFile newSkillSet = parseFile("skillData");
     vector<string> skillsUnsorted= newSkillSet.getCleanLines();
     vector<vector<skill>> sortedSet; 
+    vector<string> levelNames = getLevelNames();
+    vector<skill> tempLevel;
+    skill tempSkill;
 public:
     splitSkills(){
+        int currentLevel = 0;//by vector position
+        int skillItemCounter =0;
+        for(int i =0; i<skillsUnsorted.size(); i++){
+            if(skillsUnsorted[i] == levelNames[currentLevel]){//skip the first level
+                continue;
+            }
+            //if the current element is a level title increase counter and append set
+            if(skillsUnsorted[i] == levelNames[currentLevel+1]){
+                currentLevel++;
+                sortedSet.push_back(tempLevel);
+                tempLevel.clear();
+                skillItemCounter = 0;
+                continue;
+            }
 
+            switch(skillItemCounter){
+                case 0: tempSkill.skillNum = stoi(skillsUnsorted[i]);
+                case 1: tempSkill.time = skillsUnsorted[i];
+                case 2: tempSkill.skillDisc = skillsUnsorted[i];
+                case 3: tempSkill.activity = skillsUnsorted[i];
+                case 4: tempSkill.materials = skillsUnsorted[i];
+            }
+            if(skillItemCounter >=4){
+                tempLevel.push_back(tempSkill);
+                skillItemCounter = 0;
+                continue;
+            }
+            skillItemCounter++;
+        }
+    }
+    void test(){
+        cout<<"start"<<endl;
+        for(vector v:sortedSet){
+            cout<<"=========="<<endl;
+            for(skill s: v){
+                cout<<s.skillNum<<endl<<s.time<<endl<<s.skillDisc<<endl<<s.activity<<endl<<s.materials<<endl;
+            }
+        }
     }
 };
 int main(){
 
-    
-    
-    string FOO;
-    cin>>FOO;
+    splitSkills newskills;
+    newskills.test();
+    //
     return 0;
 }

@@ -91,11 +91,64 @@ public:
         }
     }
     void test(){
-        cout<<"start"<<endl;
+        cout<<"==========test splitSkills"<<endl;
         for(vector v:sortedSet){
             cout<<"=========="<<endl;
             for(skill s: v){
                 cout<<s.skillNum<<endl<<s.time<<endl<<s.skillDisc<<endl<<s.activity<<endl<<s.materials<<endl;
+            }
+        }
+    }
+    vector<vector<skill>> getSortedSet(){
+        return sortedSet;
+    }
+};
+class splitWeek{
+private:
+    parseFile newFile = parseFile("weekData");
+    vector<string> rawLines = newFile.getCleanLines();
+    vector<vector<vector<int>>> sortedSet;
+    vector<string> levelNames = getLevelNames();
+    vector<vector<int>> levelCorePlanTemp;
+
+    vector<int> parseWeek(string lineDataRaw){
+        vector<int> out;
+        string FOO;
+        for(int i =0; i<lineDataRaw.length(); i++){
+            if(lineDataRaw[i] == ' '){
+                out.push_back(stoi(FOO));
+                FOO = "";
+                continue;
+            }
+            FOO+=lineDataRaw[i];
+        }
+        return out;
+    }
+public:
+    splitWeek(){
+        int levelPositionCount = 0;
+        for(int i =0; i<rawLines.size(); i++){
+            if(rawLines[i] == levelNames[levelPositionCount]){
+                continue;
+            }
+            if(rawLines[i] == levelNames[levelPositionCount+1]){
+                levelPositionCount++;
+                sortedSet.push_back(levelCorePlanTemp);
+                levelCorePlanTemp.clear();
+                continue;
+            }
+            levelCorePlanTemp.push_back(parseWeek(rawLines[i]));
+        }
+    }
+    void test(){
+        cout<<"==========test splitWeek";
+        for(vector<vector<int>> v: sortedSet){
+            cout<<"=========="<<endl;
+            for(vector<int> i: v){
+                for(int skill: i){
+                    cout<<skill<<"-";
+                }
+                cout<<endl;
             }
         }
     }
@@ -104,6 +157,8 @@ int main(){
 
     splitSkills newskills;
     newskills.test();
+    splitWeek newWeeks;
+    newWeeks.test();
     //
     return 0;
 }

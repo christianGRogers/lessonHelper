@@ -99,7 +99,7 @@ public:
             }
         }
     }
-    vector<vector<skill>> getSortedSet(){
+    vector<vector<skill>> getSortedSkills(){
         return sortedSet;
     }
 };
@@ -122,6 +122,7 @@ private:
             }
             FOO+=lineDataRaw[i];
         }
+        out.push_back(stoi(FOO));
         return out;
     }
 public:
@@ -152,13 +153,35 @@ public:
             }
         }
     }
+    vector<vector<vector<int>>> getSortedWeek(){
+        return sortedSet;
+    }
+};
+class lessonPlan{
+private:
+    struct title
+    {
+        const string open = "<h2>";
+        const string close ="</h2";
+        string getTitle(string content){
+            return open+content+close;
+        }
+    };
+    struct tableItem{
+
+    };
+public:
+    lessonPlan(vector<vector<vector<int>>> weekData, vector<vector<skill>> skillData){
+
+    }
+
 };
 int main(){
 
-    splitSkills newskills;
-    newskills.test();
+    splitSkills newSkills;
+    newSkills.test();
     splitWeek newWeeks;
     newWeeks.test();
-    //
+
     return 0;
 }

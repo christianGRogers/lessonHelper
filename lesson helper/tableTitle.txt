@@ -1,0 +1,6 @@
+<tr>
+<th>Time</th>
+<th>Skill</th>
+<th>Activity</th>
+<th>Materials</th>
+</tr>

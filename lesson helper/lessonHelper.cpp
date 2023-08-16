@@ -159,20 +159,32 @@ public:
 };
 class lessonPlan{
 private:
-    struct title
-    {
+    string getTitle(string content){
         const string open = "<h2>";
         const string close ="</h2";
-        string getTitle(string content){
-            return open+content+close;
-        }
-    };
-    struct tableItem{
-
-    };
+        return open+content+close;
+    }
+    string startTable(){
+        return "<table>";
+    }
+    string endTable(){
+        return "</table>";
+    }
+    string addItem(skill newItem){
+        return "<tr><td>"+newItem.time+"</td><td>"+newItem.skillDisc+"</td><td>"+newItem.activity+"</td><td>"+newItem.materials+"</td></tr>";
+    }
+    vector<string> getTop(){
+        return readFile("top");
+    }
+    vector<string> getBase(){
+        return readFile("base");
+    }
+    vector<string> getTableTitle(){
+        return readFile("tableTitle");
+    }
 public:
-    lessonPlan(vector<vector<vector<int>>> weekData, vector<vector<skill>> skillData){
-
+    lessonPlan(vector<vector<vector<int>>> weekData, vector<vector<skill>> skillData, string teacherName, string level, int week){
+        //todo
     }
 
 };

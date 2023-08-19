@@ -14,12 +14,17 @@ struct skill{
 vector<string> readFile(string fileName){
     vector<string> lineData;
     string temp;
-    ifstream File(fileName +".txt");
+    ifstream File(fileName);
     while (getline (File, temp)) {
         lineData.push_back(temp);
     }
     File.close();
-    return lineData;
+    return lineData;   
+}
+void writeFile(string fileName, string fileContents){
+    ofstream write(fileName+".txt");
+    write<<fileContents;
+    write.close();
 }
 class parseFile{
 private:
@@ -173,27 +178,54 @@ private:
     string addItem(skill newItem){
         return "<tr><td>"+newItem.time+"</td><td>"+newItem.skillDisc+"</td><td>"+newItem.activity+"</td><td>"+newItem.materials+"</td></tr>";
     }
-    vector<string> getTop(){
-        return readFile("top");
+    string getString(string fileName){
+        string out;
+        for(string s: readFile(fileName)){
+            out+=s;
+        }
+        return out;
     }
-    vector<string> getBase(){
-        return readFile("base");
+    int convertLevelNameToInt(string level){
+        ///todo: why the fuck is this shit null, but also when I manual set return it is skill a fucking seg error
+        vector<string> levelNames = getLevelNames();
+        for(string s:levelNames){
+            cout<<s<<endl;
+        }
+        return 0;
     }
-    vector<string> getTableTitle(){
-        return readFile("tableTitle");
+    vector<int> weekPlan(int level, int week, vector<vector<vector<int>>> weekData){//return week plan (1 2 3 5 7) given a level and a week
+        return weekData[level][week-1];
     }
+    skill getSkill(int level, vector<vector<skill>> skillData, int skillNum){
+        return skillData[level][skillNum-1];
+    }
+    string lessonPlanHtml;
 public:
     lessonPlan(vector<vector<vector<int>>> weekData, vector<vector<skill>> skillData, string teacherName, string level, int week){
-        //todo
+        lessonPlanHtml+=getString("top");
+        lessonPlanHtml+=getTitle(level+"  "+teacherName+"  week "+to_string(week));
+        lessonPlanHtml+=startTable();
+        lessonPlanHtml+=getString("tableTitle");
+        //
+        cout<<convertLevelNameToInt(level)<<endl<<week<<endl;
+        //
+        vector<int> skillPlan = weekPlan(convertLevelNameToInt(level), week, weekData);
+        for(int skillNum: skillPlan){
+            lessonPlanHtml+=addItem(getSkill(convertLevelNameToInt(level), skillData, skillNum));
+        }
+        lessonPlanHtml+=endTable();
+        lessonPlanHtml+=getString("base");
+        writeFile("output.html", lessonPlanHtml);
     }
 
 };
 int main(){
 
     splitSkills newSkills;
-    newSkills.test();
     splitWeek newWeeks;
-    newWeeks.test();
+    lessonPlan newLessonPlan = lessonPlan(newWeeks.getSortedWeek(), newSkills.getSortedSkills(), "Christian", "PS1", 2);
+    
+    
 
     return 0;
 }

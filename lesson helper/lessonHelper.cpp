@@ -1,3 +1,4 @@
+//Christian Rogers 2023
 #include<iostream>
 #include<fstream>
 #include<string>
@@ -14,7 +15,7 @@ struct skill{
 vector<string> readFile(string fileName){
     vector<string> lineData;
     string temp;
-    ifstream File(fileName);
+    ifstream File(fileName+".txt");
     while (getline (File, temp)) {
         lineData.push_back(temp);
     }
@@ -22,7 +23,7 @@ vector<string> readFile(string fileName){
     return lineData;   
 }
 void writeFile(string fileName, string fileContents){
-    ofstream write(fileName+".txt");
+    ofstream write(fileName+".html");
     write<<fileContents;
     write.close();
 }
@@ -166,7 +167,7 @@ class lessonPlan{
 private:
     string getTitle(string content){
         const string open = "<h2>";
-        const string close ="</h2";
+        const string close ="</h2>";
         return open+content+close;
     }
     string startTable(){
@@ -188,9 +189,9 @@ private:
     int convertLevelNameToInt(string level){
         ///todo: why the fuck is this shit null, but also when I manual set return it is skill a fucking seg error
         vector<string> levelNames = getLevelNames();
-        for(string s:levelNames){
-            cout<<s<<endl;
-        }
+        // for(string s:levelNames){
+        //     cout<<s<<endl;
+        // }
         return 0;
     }
     vector<int> weekPlan(int level, int week, vector<vector<vector<int>>> weekData){//return week plan (1 2 3 5 7) given a level and a week
@@ -202,28 +203,26 @@ private:
     string lessonPlanHtml;
 public:
     lessonPlan(vector<vector<vector<int>>> weekData, vector<vector<skill>> skillData, string teacherName, string level, int week){
+        cout<<weekData.size()<<"--"<<skillData.size();
         lessonPlanHtml+=getString("top");
         lessonPlanHtml+=getTitle(level+"  "+teacherName+"  week "+to_string(week));
         lessonPlanHtml+=startTable();
         lessonPlanHtml+=getString("tableTitle");
-        //
-        cout<<convertLevelNameToInt(level)<<endl<<week<<endl;
-        //
         vector<int> skillPlan = weekPlan(convertLevelNameToInt(level), week, weekData);
         for(int skillNum: skillPlan){
             lessonPlanHtml+=addItem(getSkill(convertLevelNameToInt(level), skillData, skillNum));
         }
         lessonPlanHtml+=endTable();
         lessonPlanHtml+=getString("base");
-        writeFile("output.html", lessonPlanHtml);
+        writeFile("output", lessonPlanHtml);
+        
     }
 
 };
 int main(){
-
     splitSkills newSkills;
     splitWeek newWeeks;
-    lessonPlan newLessonPlan = lessonPlan(newWeeks.getSortedWeek(), newSkills.getSortedSkills(), "Christian", "PS1", 2);
+    lessonPlan newLessonPlan = lessonPlan(newWeeks.getSortedWeek(), newSkills.getSortedSkills(), "Christian", "PS1", 1);
     
     
 

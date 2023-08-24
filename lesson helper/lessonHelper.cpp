@@ -165,6 +165,7 @@ public:
 };
 class lessonPlan{
 private:
+    vector<string> levelNames = getLevelNames();
     string getTitle(string content){
         const string open = "<h2>";
         const string close ="</h2>";
@@ -187,23 +188,30 @@ private:
         return out;
     }
     int convertLevelNameToInt(string level){
-        ///todo: why the fuck is this shit null, but also when I manual set return it is skill a fucking seg error
-        vector<string> levelNames = getLevelNames();
-        // for(string s:levelNames){
-        //     cout<<s<<endl;
-        // }
-        return 0;
+        for(int i =0; i<levelNames.size();i++){
+            if(levelNames[i]==level){
+                return i;
+            }
+        }
+        return -1;
     }
     vector<int> weekPlan(int level, int week, vector<vector<vector<int>>> weekData){//return week plan (1 2 3 5 7) given a level and a week
         return weekData[level][week-1];
     }
     skill getSkill(int level, vector<vector<skill>> skillData, int skillNum){
-        return skillData[level][skillNum-1];
+        for(vector<skill> v1: skillData){
+            for(skill s1: v1){
+                if(s1.skillNum == skillNum){
+                    return s1;
+                }
+            }
+        }
+        skill nullSkill;
+        return nullSkill;//skillData[level][skillNum-1];
     }
     string lessonPlanHtml;
 public:
     lessonPlan(vector<vector<vector<int>>> weekData, vector<vector<skill>> skillData, string teacherName, string level, int week){
-        cout<<weekData.size()<<"--"<<skillData.size();
         lessonPlanHtml+=getString("top");
         lessonPlanHtml+=getTitle(level+"  "+teacherName+"  week "+to_string(week));
         lessonPlanHtml+=startTable();
@@ -220,11 +228,14 @@ public:
 
 };
 int main(){
+    string lessonLevel, instuctorName, week;
+    parseFile commands = parseFile("temp");
+    vector<string> newCommands = commands.getCleanLines();
+    lessonLevel = newCommands[0];
+    instuctorName = newCommands[1];
+    week = newCommands[2];
     splitSkills newSkills;
     splitWeek newWeeks;
-    lessonPlan newLessonPlan = lessonPlan(newWeeks.getSortedWeek(), newSkills.getSortedSkills(), "Christian", "PS1", 1);
-    
-    
-
+    lessonPlan newLessonPlan = lessonPlan(newWeeks.getSortedWeek(), newSkills.getSortedSkills(), instuctorName, lessonLevel, stoi(week));
     return 0;
 }

@@ -71,11 +71,37 @@ PS5
 //
 //
 SW1
-//
-//
-//
-//
-//
+1
+1min
+1- enter and exit shallow water
+
+
+2
+Jump into chest-deep water
+3
+jump into deep water wearing PFD
+4
+Tread water (30 sec.) wearing PFD
+5
+Hold breath underwater 5 sec.
+6
+submerge and exhale 5 times
+7
+Open eyes underwater
+8
+Float on front 5 sec / Float on back 5 sec
+9
+Roll laterally front to back and back to front
+10
+Glide on front 3 m / Glide on back 3m / Glide on side 3m
+11
+Flutter kick on front 5 m /Flutter kick on back 5 m
+12
+Front
+crawl 5
+m
+wearing PFD
+13
 SW2
 //
 //

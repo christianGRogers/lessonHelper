@@ -199,15 +199,7 @@ private:
         return weekData[level][week-1];
     }
     skill getSkill(int level, vector<vector<skill>> skillData, int skillNum){
-        for(vector<skill> v1: skillData){
-            for(skill s1: v1){
-                if(s1.skillNum == skillNum){
-                    return s1;
-                }
-            }
-        }
-        skill nullSkill;
-        return nullSkill;//skillData[level][skillNum-1];
+        return skillData[level][skillNum-1];
     }
     string lessonPlanHtml;
 public:

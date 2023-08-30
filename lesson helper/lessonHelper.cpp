@@ -214,6 +214,7 @@ public:
         }
         lessonPlanHtml+=endTable();
         lessonPlanHtml+=getString("base");
+        cout<<lessonPlanHtml;
         writeFile("output", lessonPlanHtml);
         
     }
@@ -228,6 +229,8 @@ int main(){
     week = newCommands[2];
     splitSkills newSkills;
     splitWeek newWeeks;
+    newSkills.test();
+    newWeeks.test();
     lessonPlan newLessonPlan = lessonPlan(newWeeks.getSortedWeek(), newSkills.getSortedSkills(), instuctorName, lessonLevel, stoi(week));
     return 0;
 }

@@ -91,6 +91,9 @@ public:
             if(skillItemCounter >=4){
                 tempLevel.push_back(tempSkill);
                 skillItemCounter = 0;
+                if(i == skillsUnsorted.size()-1){
+                    sortedSet.push_back(tempLevel);
+                }
                 continue;
             }
             skillItemCounter++;
@@ -98,11 +101,13 @@ public:
     }
     void test(){
         cout<<"==========test splitSkills"<<endl;
+        int i =0;
         for(vector v:sortedSet){
-            cout<<"=========="<<endl;
+            cout<<"=========="<<i<<endl;
             for(skill s: v){
                 cout<<s.skillNum<<endl<<s.time<<endl<<s.skillDisc<<endl<<s.activity<<endl<<s.materials<<endl;
             }
+            i++;
         }
     }
     vector<vector<skill>> getSortedSkills(){
@@ -145,18 +150,23 @@ public:
                 continue;
             }
             levelCorePlanTemp.push_back(parseWeek(rawLines[i]));
+            if(i ==rawLines.size()-1){
+                sortedSet.push_back(levelCorePlanTemp);
+            }
         }
     }
     void test(){
         cout<<"==========test splitWeek";
+        int i =0;
         for(vector<vector<int>> v: sortedSet){
-            cout<<"=========="<<endl;
+            cout<<"=========="<<i<<endl;
             for(vector<int> i: v){
                 for(int skill: i){
                     cout<<skill<<"-";
                 }
                 cout<<endl;
             }
+            i++;
         }
     }
     vector<vector<vector<int>>> getSortedWeek(){
@@ -214,7 +224,6 @@ public:
         }
         lessonPlanHtml+=endTable();
         lessonPlanHtml+=getString("base");
-        cout<<lessonPlanHtml;
         writeFile("output", lessonPlanHtml);
         
     }
@@ -229,8 +238,6 @@ int main(){
     week = newCommands[2];
     splitSkills newSkills;
     splitWeek newWeeks;
-    newSkills.test();
-    newWeeks.test();
     lessonPlan newLessonPlan = lessonPlan(newWeeks.getSortedWeek(), newSkills.getSortedSkills(), instuctorName, lessonLevel, stoi(week));
     return 0;
 }

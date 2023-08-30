@@ -156,7 +156,7 @@ public:
         }
     }
     void test(){
-        cout<<"==========test splitWeek";
+        cout<<"==========test splitWeek"<<endl;
         int i =0;
         for(vector<vector<int>> v: sortedSet){
             cout<<"=========="<<i<<endl;
@@ -222,6 +222,7 @@ public:
         for(int skillNum: skillPlan){
             lessonPlanHtml+=addItem(getSkill(convertLevelNameToInt(level), skillData, skillNum));
         }
+        cout<<"hello";
         lessonPlanHtml+=endTable();
         lessonPlanHtml+=getString("base");
         writeFile("output", lessonPlanHtml);

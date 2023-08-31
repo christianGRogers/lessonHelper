@@ -3,6 +3,7 @@
 #include<fstream>
 #include<string>
 #include<vector>
+#include <chrono>
 using namespace std;
 
 struct skill{
@@ -23,7 +24,7 @@ vector<string> readFile(string fileName){
     return lineData;   
 }
 void writeFile(string fileName, string fileContents){
-    ofstream write(fileName+".html");
+    ofstream write(fileName);
     write<<fileContents;
     write.close();
 }
@@ -173,6 +174,18 @@ public:
         return sortedSet;
     }
 };
+void storeUserData(string userData){
+    parseFile newFile = parseFile("userHistory");
+    vector<string>  userHistory = newFile.getCleanLines();
+    time_t ct = time(0);
+    char* cc = ctime(&ct);
+    string out;
+    for(string s: userHistory){
+        out+=s+"\n";
+    }
+    out+=userData+"-"+cc;
+    writeFile("userHistory.txt", out);
+}
 class lessonPlan{
 private:
     vector<string> levelNames = getLevelNames();
@@ -222,11 +235,10 @@ public:
         for(int skillNum: skillPlan){
             lessonPlanHtml+=addItem(getSkill(convertLevelNameToInt(level), skillData, skillNum));
         }
-        cout<<"hello";
         lessonPlanHtml+=endTable();
         lessonPlanHtml+=getString("base");
-        writeFile("output", lessonPlanHtml);
-        
+        writeFile("output.html", lessonPlanHtml);
+        storeUserData(teacherName + " "+level+ " "+ to_string(week));
     }
 
 };

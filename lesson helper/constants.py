@@ -1,11 +1,19 @@
 class SkillType:
-    item = 0
-    time = 0
+    time = ""
     skill = ""
     activity = ""
     config = ""
     materials = ""
 
+TIME_C = 5
+SKILL_C = 4
+ACTIV_C = 3
+CONFIG_C = 2
+MAT_C = 1
+SKILL_TYPE_ITEMS = 5
+COMMENT = "//"
+MIN_WEEK = 1
+MAX_WEEK = 8
 LEVEL_NAMES = [
     'PS1',
     'PS2',
@@ -48,3 +56,6 @@ tr:nth-child(even) {
 <body>"""
 
 FILE_BOTTOM = "</body></html>"
+
+FORMATION_TYPES = ['circle', 'line', 'wall line', 'scatered', 'null', 
+                   'circle swim short', 'circle swim long']

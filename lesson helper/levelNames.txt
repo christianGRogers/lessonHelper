@@ -1,4 +1,4 @@
-//a newline seprated list of level names
+//a newline seprated list of level names (only swim for life as it is)
 PS1
 PS2
 PS3

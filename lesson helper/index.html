@@ -1,51 +1,110 @@
-
-<!-- Christian Rogers 2023 -->
+<!--Christian Rogers with GPT 3.5 ui rewrite-->
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Planner</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #0252bb;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"],
+    select {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ffffff;
+    }
+
+    input[type="submit"] {
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00b32d;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    .note {
+      font-style: italic;
+      color: #ffffff;
+    }
+  </style>
 </head>
-<body style='background-color:#2d333d; color:white; '>
-    <form action="getLessonPlan.php" method="post">
-        <select id="level" name="level">
-          <option value="PS1">PS1</option>
-          <option value="PS2">PS2</option>
-          <option value="PS3">PS3</option>
-          <option value="PS4">PS4</option>
-          <option value="PS5">PS5</option>
-          <option value="SW1">SW1</option>
-          <option value="SW2">SW2</option>
-          <option value="SW3">SW3</option>
-          <option value="SW4">SW4</option>
-          <option value="SW5">SW5</option>
-          <option value="SW6">SW6</option>
-        </select>
-        <br>
-        <label for="fname">Instructor Name:</label>
-        <input type="text" id="fname" name="fname">
-        <br>
-        <label for="week">Week Number:</label>
-        <select id="week" name="week">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-          </select>
-        <br>
-        <input type="submit">
-      </form> 
-      <br>
-      <h3> Notes to the user(Aug 2023):</h3><br>
-      <p>1.Beta lessonHelper will be free from now until the end of COB Fall 2023 inst session</p><br>
-      <p>2.The skill database is underdeveloped; contributions can be sent to christian@bradensbay.com</p><br>
-      <p>3.As of the winter session, accses will be $10 per year($0.83 per month)</p><br>
-      <p>4.Valid contributions via point 2 will result in a $0.25 reduction in cost each(maximum 20)</p><br>
-      <p>5.As of now times are not correct but I am working to fix that(times don't add to 30min)</p><br>
-      <p>6.Any bugs or post beta ideas? Please email me: christian@bradensbay.com</p>
-<br>
-<br>
-<p>Christian Rogers 2023  --please consider the environment when printing lesson plans<p>
+<body>
+  <form action="getLessonPlan.php" method="post">
+    <label for="level">Select Level:</label>
+    <select id="level" name="level">
+      <option value="PS1">PS1</option>
+      <option value="PS2">PS2</option>
+      <option value="PS3">PS3</option>
+      <option value="PS4">PS4</option>
+      <option value="PS5">PS5</option>
+      <option value="SW1">SW1</option>
+      <option value="SW2">SW2</option>
+      <option value="SW3">SW3</option>
+      <option value="SW4">SW4</option>
+      <option value="SW5">SW5</option>
+      <option value="SW6">SW6</option>
+    </select>
+    <br>
+    <label for="fname">Instructor Name:</label>
+    <input type="text" id="fname" name="fname">
+    <br>
+    <label for="week">Week Number:</label>
+    <select id="week" name="week">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+    <br>
+    <input type="submit" value="Get Lesson Plan">
+  </form> 
+
+  <div class="note">
+    <h3>Note to the User (Jan 2024):</h3>
+    <p>1. The skill database is underdeveloped; contributions can be sent to <a href="mailto:christian@bradensbay.com">christian@bradensbay.com</a></p>
+    <br><p>2. Yes, I know winter lessons are 12 weeks, and there are currently only 8 avalible but this will be fixed by week 8.</p>
+  </div>
+
+  <footer>
+    <p>Christian Rogers 2024</p>
+  </footer>
 </body>
 </html>

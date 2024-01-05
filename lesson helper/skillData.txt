@@ -3,6 +3,7 @@
 //time(min)
 //skill(num and description)
 //activity(game or drill)
+//config(todo config img file code ie 'circle')
 //materials(list or "/" for null)
 //#################################################################
 PS1

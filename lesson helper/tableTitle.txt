@@ -2,5 +2,6 @@
 <th>Time</th>
 <th>Skill</th>
 <th>Activity</th>
+<th>Configuration</th>
 <th>Materials</th>
 </tr>

@@ -1,0 +1,16 @@
+skillData.txt
+// position one is given to levelname
+
+//item num(int)(no space or any other characters)
+//time(min)
+//skill(num and description)
+//activity(game or drill)
+//config(todo config img file code ie 'circle')
+//materials(list or "/" for null)
+//#################################################################
+weekData.txt
+//position one is for title then next 8 lines are core plan(8 weeks) eg:
+//1 3 5 7 9
+//2 4 6 8 10
+//etc
+//current setup shows 8 week session -> 12 

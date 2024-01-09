@@ -1,23 +1,15 @@
-// position one is given to title then grouped by five is items 
-//item num(int)(no space or any other characters)
-//time(min)
-//skill(num and description)
-//activity(game or drill)
-//config(todo config img file code ie 'circle')
-//materials(list or "/" for null)
-//#################################################################
 PS1
 1
 3min
 1 - Enter and exit shallow water (assisted)
 demonstrate using steps, ramps, pool edge to enter water play a game to get children comfortable and into the water
-line
+wall line
 
 2
 6min
 2 - Jump into chest-deep water (assisted)
 demonstrate and practice jumping into chest-deep water
-wall
+wall line
 
 3
 5min
@@ -60,7 +52,7 @@ PS2
 5min
 1- enter and exit shallow water wearing a pfd
 play a game or sing a song to get kis comfotable in water(talk a bout water smart counterpart)
-line
+wall line
 Pfd
 2
 2min
@@ -267,401 +259,485 @@ wall line
 2min
 3-submerge and hold breath 5 sec
 play a bob story but modify the definition of a bob
+circle
 
 4
 4min
 4-Recover object from bottom in chest-deep water
 "lets go on a tresure hunt" also makes a good wall game
+scatered
 sinking toys
 5
 4min
 5-Wearing PFD, sideways entry into deep water; tread 20 sec.; swim / kick 10m
 talk about water smart conection and how a pfd makes unexpected falls easyer
+scatered
 pfd
 6
 8min
 6-Whip kick in vertical position (20 sec.) with a PFD or buoyant aid 
-use wall development -- manipulation etc -- will likely need a lot of time 
+use wall development -- manipulation etc -- will likely need a lot of time
+wall line 
 pfd
 7
 8min
 7-Front crawl 5 m
 develop with buoyant aids and ensure level must sees(ref worksheet)
+circle swim short
 
 8
 8min
 8-Back crawl 5 m
 develop with buoyant aids and ensure level must sees(ref worksheet)
+circle swim short
 
 9
 7min
 9-interval training: 4 x 5m flutter kick on back with 30 sec. rests
 talk about pacing and the importance of finishing over that of speed(saftey permiting make a relay race to develop skill)
+circle swim short
 
 10
 2min
 10-Water Smart message: Within Arms’ Reach/Water Smart message: Wear a Lifejacket
 incorperate into another skill
+null
 
 SW1
 1
 1min
 1- enter and exit shallow water
 play a game to get kids in the water
+scatered
 
 2
 2min
 2-Jump into chest-deep water
 play a game like colours chop chop etc
+wall line
 bucket if applicable
 3
 6min
 3-jump into deep water wearing PFD
 play a game like colours chop chop etc
+wall line
 bucket if applicable / pfds
 4
 30sec
 4-Tread water (30 sec.) wearing PFD
 play a game sing a song or do a water smart item while treading
+circle
 pfds
 5
 2min
 5-Hold breath underwater 5 sec.
 underwater tea party or make it a competition(but educate possible dangers)
+wall line
 
 6
 1min
 6-submerge and exhale 5 times
 bob game(the best game)
+circle
 
 7
 2min
 7-Open eyes underwater
 numbers(hold up a certain number of fingers underwater so they have to submerge and open their eyes person who gets the correct number the most wins)
+circle
 
 8
 5min
 8-Float on front 5 sec / Float on back 5 sec
 practice ensure hips/head are positioned corectly and use aids like noodls and yoga mats as needed
+wall line
 noodles/yoga mats
 9
 5min
 9-Roll laterally front to back and back to front
 "do your pancake flips" ensure proper buoyant body position
+wall line
 
 10
 5min
 10-Glide on front 3 m / Glide on back 3m / Glide on side 3m
 "lets do our spagette meatballs/ rocket ships" ensure proper streamlined position
+wall line
 
 11
 5min
 11-Flutter kick on front 5 m /Flutter kick on back 5 m
 develop from glides and allow a wall push -- progress with flutter boards
+wall line
 flutter board (as needed)
 12
 7min
 12-Front crawl 5 m wearing PFD
 once developed to a reasonable standard play "what time is it mr wolf"
+circle swim short
 pfds
 13
 2min
 13-Water Smart message: Swim with a Buddy / wear a lifejacket/ check the ice/ swim to survive
 intigrate into another skill
+null
 pfds(as needed)
 SW2
 1
 2min 
 1-Jump into deep water, return and exit
 play a game like colours jelly beans
+wall line
 
 2
 5min
 2-Sideways entry wearing PFD
 ensure proper head protecive hand position(you may have do more then the one demo to engrain proper positoning)
+wall line
 
 3
 1min
 3-Tread water 15 sec
 one at a time to ensure safty(in water they can't touch in)
+wall line
 
 4
 4min
 4-Recover object from bottom in chest-deep water
 go on a "treasure hunt" also makes a great wall game during skill wait time
+scatered
 sinking toys
 5
 2min
 5-Wearing PFD, jump into deep water, tread 30 sec. and swim / kick 15m
 encorperte water smart message "dose a lifejacket make this easyer or harder"?
+wall line
 pfds
 6
 9min
 6-Flutter kick on front 10 m / back /side
 arange to have two kids go at a time(saftey permiting) and have a wall game for the rest of the kids progress distance
+circle swim short
 
 7
 1min
 7-Whip kick in vertical position (30 sec.) with aid
 proper progressions(will likely have to use manipulation to hit must sees(ref worksheets))
+wall line
 noodles
 8
 10min
 8-Front crawl 10 m / Back crawl 10 m
 develop from combined skills(flutter kick) use drills as needed(eg zipper)
+circle swim short
 
 9
 7min
 9-Interval training: 4x 5 m flutter kickwith 20 sec. rest
 talk about the importance of finishing(pace) introduce a circle swim
+circle swim short
 
 10
 2min
 10-Water smart: swim with a buddy / wear a lifejacket / check the ice / swim to survive 
 incorperate into a skill(ie lifejackets in swim to survive)
+null
 
 SW3
 1
 5min
 1-Kneeling dive into deep water
-ensure tucked hips and proper aim poin etc
+ensure tucked hips and proper aim point etc
+wall line
 
 2
 2min
 2-Forward roll entry into deep water
 talk about why we do this skill(prapare for unexpected falls into water)
+wall line
 
 3
 30 sec
 3-Tread water 30 sec
 play hot potato( near a wall as they may need breaks)
+circle
 ball
 4
 3min
 4-Handstand in shallow water
 bro idk, what is a handstand game?
+scatered
 
 5
 3min
 5-Front somersault (in water)
 once they get good see who can do the most in a row or introduce flip turns
+circle swim short
 
 6
 3min
 6-Jump into deep water, tread 30 sec., and swim / kick 25m
 talk about efficent treading methods to conserve energy/ talk about water smart
+scatered
 
 7
 4min
 7-Flutter kick on back 5 m; reverse direction and flutter kick on front 5 m
 turn it into a relay race(saftey permiting)
+circle swim short
 
 8
 4min
 8-Flutter kick on front 5 m; reverse direction and flutter kick on back 5 m
 turn it into a relay race(saftey permiting)
+circle swim short
 
 9
 6min
 9-Whip kick on back 10 m
 ensure proper progressions(likely will need manipulation for corrections) develop with noodle
+circle swim short
 noodle
 10
 10min
 10-front crawl 15 m / back crawl 15m
 ensure proper must sees progress dictance add drills as needed(ref worksheets)
+circle swim short
 
 11
 8min
 11-Interval training: 4 x 15 m flutter kick with 20 sec. rests
 talk about the impotance of finishing over speed and proper pace
+circle swim short
 
 12
 2min
 12-Water Smart message: Swim with a Buddy / wear a lifejacket/ check the ice /swim to survive
 incorperate into a skill(ie lifejackets in swim to survive)
+null
 
 SW4
 1
 5min
 1-Standing dive into deep water
 ensure tucked hips and proper aim poin etc add hoop once fully progressed
+wall line
 hoops(as needed)
 2
 1min
 2-Tread water 1 min.
 play hot potato or talk about water smart(don't you wish you had a pfd right now)
+wall line
 ball(as needed)
 3
 1min
 3-Swim underwater 5 m
 see who can go the farthest
+wall line
 sinking toys to mark distance
 4
 5min
 4-Canadian Swim to -Survive Standard: Roll entry into deep water, tread 1 min. and swim 50m
 talk about the importance of pace talk about water smart and how a pfd would make it easyer
+scatered
 
 5
 6min
 5-Whip kick on front 15m
 proper development and drills/ manipulation
+wall line
 
 6
 5min
 6-Breaststroke arms drill 15m
 demo a full breaststroke so they know the end goal
+scatered
 
 7
 10min
 7-Front crawl 25 m/ back crawl 25m
 proper progressions and drills
+circle swim long
 
 8
 7min
 8-Interval training: 4 x 25 m front or back crawl with 20 sec. rests
 talk about the importance of pacing and proper swiming etiquiite(circle swim)
+circle swim long
 
 9
 3min
 9-Sprint front crawl 25 m
 time the swim and work towards improving the time
+circle swim long
 
 10
 2min
 10-Water smart: swim with a buddy / wear a lifejacket / check the ice / swim to survive
 incorperate into a skill(ie lifejackets in swim to survive)
+null
 
 SW5
 1
 6min
 1-Shallow dive into deep water
 talk about aiming points - have a noodle as a minimum distance they need to reach underwater - importance of knowing water depth
+wall line
 
 2
 3min
 2-Tuck jump (cannonball) into deep water 
 connonball contest
+wall line
 
 3
 2min
 3-Jump entry into deep water, and tread 2 min
 hot potato or talk about a water smart priciple
+scatered
 ball(as needed)
 4
 2min
 4-Stationary eggbeater kick 30 sec
 progress proper eggbeater(manipulation and drills as needed)
+scatered
 
 5
 2min
 5-Back somersault (in water)
 see how many consecutive each child can do
+scatered
 
 6
 2min
 6-Roll entry into deep water, tread 90 sec. and swim 75m
 talk about water smart counter part and the importance of pfds
+circle swim long
 
 7
 8min
 7-Breaststroke 25m
-ensure proper must sees(ref worksheet) increase distance and add drills/ 
+ensure proper must sees(ref worksheet) increase distance and add drills/
+circle swim long
 
 8
 10min
 8-Front crawl 50 m/Back crawl 50 m
-ensure proper must sees(ref worksheet) increase distance and add drills/ 
+ensure proper must sees(ref worksheet) increase distance and add drills/
+circle swim long
 
 9
 3min
 9-Head-up front crawl 10 m
 talk about its importance in lifesaving and proper head position( add a stride for fun)
+circle swim long
 
 10
 8min
 10-Interval training: 4 x 50 m front or back crawl with 30 sec. rests
 talk about proper pacing and swiming etiquiite(ensure f and b must sees are met(ref worksheet))
+circle swim long
 
 11
 5min
 11-Interval training: 4 x 15 m breaststroke with 30 sec. rests
 talk about proper pacing and swiming etiquiite(ensure f and b must sees are met(ref worksheet))
+circle swim long
 
 12
 2min
 12-Sprint front crawl 25 m/Sprint back crawl 25m
 time swim and aim to improve
+circle swim long
 
 13
 2min
 13-Water smart: swim with a buddy / wear a lifejacket / check the ice / swim to survive
 incorperate into a skill(ie lifejackets in swim to survive)
+null
 
 SW6
 1
 1min
 1-Stride entry into deep water
 talk about its use in lifesaving(actualy no but okay)
+wall line
 
 2
 1min
 2-Compact jump into deep water
 who calls it a compact jump? its a pencil dive
+wall line
 
 3
 45sec
 3-Legs-only surface support 45 sec
 hot potato -- once developed give them a weight(5#). Because why not
+scatered
 ball or 5# as needed
 4
 4min
 4-Swim underwater 10 m to recover object
 once developed increase the dive depth to deep end(progress on drop)
+scatered
 rings
 5
 7min
 5-Eggbeater kick on back 15 m
 progress proper eggbeater(manipulation and drills as needed)
+circle swim long
 
 6
 5min
 6-Scissor kick 15 m
 progress(manipulation and drills as needed) talk about how it fits in with the other lifesaving kicks
+circle swim long
 
 7
 8min
 7-Breaststroke 50 m
 ensure proper must sees+corrections(ref worksheet) increase distance and add drills
+circle swim long
 
 8
 8min
 8-Front crawl 100 m/Back crawl 100 m
 ensure proper must sees+corrections(ref worksheet) increase distance and add drills
+circle swim long
 
 9
 6min
 9-Head-up swim 25 m
 head fcrawl and breaststroke -- talk about importance in lifesaving
+circle swim long
 
 10
 7min
 10-Interval training: 4 x 25 m breaststroke with 30 sec. rests
 talk about proper pacing and swiming etiquiite(ensure f and b must sees are met(ref worksheet))
+circle swim long
 
 11
 2min
 11-Sprint breaststroke 25m
 time swim and aim to improve
+circle swim long
+
+11
+2min
+11-Sprint breaststroke 25m
+have a relay race
+circle swim long
 
 12
 13min
 12-Workout 300 m
 talk about proper pacing and swiming etiquiite(ensure f and b must sees are met(ref worksheet))(front crawl back crawl or breaststroke)
- 
+circle swim long
+
 13
 2min
 13-Water smart: swim with a buddy / wear a lifejacket / check the ice / swim to survive
 incorperate into a skill(ie lifejackets in swim to survive)
-
-//end
+null
+as needed

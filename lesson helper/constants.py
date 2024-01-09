@@ -1,19 +1,10 @@
 class SkillType:
     time = ""
-    skill = ""
+    skill_desc = ""
     activity = ""
     config = ""
     materials = ""
 
-TIME_C = 5
-SKILL_C = 4
-ACTIV_C = 3
-CONFIG_C = 2
-MAT_C = 1
-SKILL_TYPE_ITEMS = 5
-COMMENT = "//"
-MIN_WEEK = 1
-MAX_WEEK = 8
 LEVEL_NAMES = [
     'PS1',
     'PS2',
@@ -53,9 +44,19 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-<body>"""
+<body>
+<table><tr><th>Skill</th><th>Time</th><th>Activity</th><th>Materials</th><th>Formation</th></tr>"""
+TABLE_ITEM = ["<td>", "</td>"]
+TABLE_ROW = ["<tr>", "</tr>"]
+FILE_BOTTOM = "</table></body></html>"
 
-FILE_BOTTOM = "</body></html>"
-
-FORMATION_TYPES = ['circle', 'line', 'wall line', 'scatered', 'null', 
+FORMATION_TYPES_TO_IMAGE = ['circle', 'line', 'wall line', 'scatered', 'null', 
                    'circle swim short', 'circle swim long']
+WEEK_LBL = "week: "
+H = ['<h2>', '</h2>']
+SPC = " "
+def GET_IMG(name: str) -> str:
+    """Return image tag for file name"""
+    if name == "null":
+        return ""
+    return "<img src='"+ name +".jpg"+"' alt='config' style='width:40%;height:30%;'>"

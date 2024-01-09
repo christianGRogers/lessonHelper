@@ -1,5 +1,6 @@
 from parsefunctions import (get_skills, get_weeks_skills)
 from generate import get_table
+import datetime
 
 def main(name: str, level:str, week: str) -> None:
     """Modify output.html so it contains a lesson plan following..."""
@@ -13,6 +14,9 @@ def main(name: str, level:str, week: str) -> None:
     output.close()
     skill_file.close()
     week_file.close()
+    log_file = open("userHistory.txt", 'a')
+    log_file.write(str(datetime.datetime.now()) + " "+name+" "+level+" "+week)
+    log_file.close()
 input_data = open("temp.txt")
 data = input_data.readlines()
 input_data.close()

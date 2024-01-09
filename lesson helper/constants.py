@@ -59,4 +59,4 @@ def GET_IMG(name: str) -> str:
     """Return image tag for file name"""
     if name == "null":
         return ""
-    return "<img src='"+ name +".jpg"+"' alt='config' style='width:40%;height:30%;'>"
+    return "<img src='img/"+ name +".jpg"+"' alt='config' style='width:40%;height:30%;'>"

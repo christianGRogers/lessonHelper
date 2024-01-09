@@ -28,12 +28,6 @@ def get_skills(skill_file: TextIO) -> dict[str,dict[int, list[SkillType]]]:
 
         match current_skill_atribute:
             case 0:
-                if current_item != 0:
-                    if current_item in item_to_skills:
-                        item_to_skills[current_item].append(skill)
-                    else:
-                        item_to_skills[current_item] = [skill]
-                skill = SkillType()
                 current_item = int(line)
                 current_skill_atribute += 1
             case 1:
@@ -50,6 +44,11 @@ def get_skills(skill_file: TextIO) -> dict[str,dict[int, list[SkillType]]]:
                 current_skill_atribute += 1
             case 5:
                 skill.materials = line
+                if current_item in item_to_skills:
+                    item_to_skills[current_item].append(skill)
+                else:
+                    item_to_skills[current_item] = [skill]
+                skill = SkillType()
                 current_skill_atribute = 0
     level_to_items_to_skills[level] = item_to_skills
     return level_to_items_to_skills
@@ -64,7 +63,9 @@ def get_weeks_skills(week_file: TextIO, level: str, week: int,
     for line in week_file:
         line = line.strip()
         if line in LEVEL_NAMES and count != 1:
-            level_to_weeks_to_skills[line] = weeks_to_skills
+            level_temp = LEVEL_NAMES[LEVEL_NAMES.index(line)-1]
+            level_to_weeks_to_skills[level_temp] = weeks_to_skills
+            weeks_to_skills = {}
             count = 1
             continue
         weeks_to_skills[count] = line.split()

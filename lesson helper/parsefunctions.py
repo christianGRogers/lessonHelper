@@ -72,7 +72,7 @@ def get_weeks_skills(week_file: TextIO, level: str, week: int,
             continue
         weeks_to_skills[count] = line.split()
         count += 1
-    level_to_weeks_to_skills[line] = weeks_to_skills
+    level_to_weeks_to_skills[LEVEL_NAMES[-1]] = weeks_to_skills
     ## functinate
     skills = []
     week_skills = level_to_weeks_to_skills[level][week]
